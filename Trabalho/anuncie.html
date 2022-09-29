@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Anuncie</title>
+</head>
+
+<body>
+
+   <!-- Código referente ao cabeçalho -->
+
+   <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top" style="box-shadow: 5px 10px 8px #000">
+      <div class="container">
+         <a class="navbar-brand" href="frontpage.html"><img src="assets/images/logo.png" style="width: 90px" ;
+               alt="Luis Imóveis"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Botão de navegação">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav" style="padding-left: 30%;">
+               <a class="nav-link nav-item ">
+                  <i class="fa-brands fa-whatsapp"></i>(21) 3741-8920</a>
+               <div class="dropdown">
+                  <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown">
+                     <i class="fa-brands fa-whatsapp"></i>Venda e aluguel</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">(21) 99974-3384</a>
+                     <a class="dropdown-item" href="#">(21) 2608-0489</a>
+                  </div>
+               </div>
+               <a class="nav-link nav-item" href="anuncie.html">
+                  <i class="fa-solid fa-house-circle-exclamation"></i>Anuncie seu imóvel</a>
+               <a class="nav-link nav-item" href="como-alugar-seu-imovel.html">Como alugar seu imóvel</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <nav aria-label="breadcrumb" class="centralizar" style="margin-top: 100px; width: 1200px;">
+      <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="frontpage.html">Home</a></li>
+         <li class="breadcrumb-item active" aria-current="page">Anuncie seu imóvel</li>
+      </ol>
+   </nav>
+
+   <!-- Código referente ao formulário -->
+
+   <form action="" class="centralizar" style="width: 1200px;">
+      <fieldset class="form-group">
+
+         <!-- Opções de texto -->
+
+         <div class="form-group row">
+            <label for="nome" class="col-form-label col-2 bold">Nome do Proprietário</label>
+
+            <div class="col-10">
+               <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
+            </div>
+
+            <label for="cpf" class="col-form-label col-2 bold">CPF</label>
+
+            <div class="col-md-4 col-10">
+               <input type="text" class="form-control" placeholder="123.456.789-00" id="cpf" name="cpf">
+            </div>
+
+            <label for="email" class="col-form-label col-2 bold">E-mail</label>
+
+            <div class="col-md-4 col-10">
+               <input type="text" class="form-control" placeholder="teste@email.com.br" id="email" name="email">
+            </div>
+
+            <label for="end" class="col-form-label col-2 bold">Endereço de imóvel</label>
+
+            <div class="col-10">
+               <input type="text" class="form-control" placeholder="Rua X" id="end" name="end">
+            </div>
+
+            <label for="cep" class="col-form-label col-2 bold">CEP</label>
+
+            <div class="col-lg-2 col-md-4 col-10">
+               <input type="text" class="form-control" placeholder="12345-678" id="cep" name="cep">
+            </div>
+
+            <label for="telefone" class="col-form-label col-2 bold">Telefone</label>
+
+            <div class="col-lg-2 col-md-4 col-10">
+               <input type="text" class="form-control" placeholder="(00) 1234-5678" id="telefone" name="telefone">
+            </div>
+
+            <label for="whatsapp" class="col-form-label col-2 bold">Whatsapp</label>
+
+            <div class="col-lg-2 col-10">
+               <input type="text" class="form-control" placeholder="(00) 12345-6789" id="whatsapp" name="whatsapp">
+            </div>
+
+            <!-- Opções para marcar o tipo de imóvel -->
+
+            <label class="col-form-label col-lg-12 bold">Tipo do Imóvel</label>
+            <div class="col-lg-12">
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-casa" value="Ca">
+                  <label for="imovel-casa" class="form-check-label">Casa</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-apartamento" value="Ap">
+                  <label for="imovel-apartamento" class="form-check-label">Apartamento</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-cobertura" value="Co">
+                  <label for="imovel-cobertura" class="form-check-label">Cobertura</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-terreno" value="Te">
+                  <label for="imovel-terreno" class="form-check-label">Terreno</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-loja" value="Lo">
+                  <label for="imovel-loja" class="form-check-label">Loja</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="imovel" id="imovel-galpao" value="Ga">
+                  <label for="imovel-galpao" class="form-check-label">Galpão</label>
+               </div>
+            </div>
+         </div>
+
+         <div class="form-group row">
+
+            <!-- Primeira coluna -->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+               <label for="servicos" class="col-form-label bold">Serviços</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="cozinha" id="cozinha">
+                     <label class="form-check-label" for="cozinha">
+                        Cozinha
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="dce" id="dce">
+                     <label class="form-check-label" for="dce">
+                        DCE
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="despensa" id="despensa">
+                     <label class="form-check-label" for="despensa">
+                        Despensa
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="copa" id="copa">
+                     <label class="form-check-label" for="copa">
+                        Copa
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="area" id="area">
+                     <label class="form-check-label" for="area">
+                        Área de serviço
+                     </label>
+                  </div>
+               </div>
+
+               <label for="social" class="col-form-label bold">Social</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="sacada" id="sacada">
+                     <label class="form-check-label" for="sacada">
+                        Sacada
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="escritório" id="escritório">
+                     <label class="form-check-label" for="escritório">
+                        Escritório
+                     </label>
+                  </div>
+               </div>
+
+               <label for="salas" class="col-form-label bold">Nº de salas</label>
+               <input type="text" class="form-control" placeholder="0" id="salas" name="salas">
+
+            </div>
+
+            <!-- Segunda coluna -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+               <label for="intima" class="col-form-label bold">Íntima</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="lavabo" id="lavabo">
+                     <label class="form-check-label" for="lavabo">
+                        Lavabo
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="suites" id="suites">
+                     <label class="form-check-label" for="suites">
+                        Suítes
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="dormitorios" id="dormitorios">
+                     <label class="form-check-label" for="dormitorios">
+                        Dormitórios
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="dormitorios-reversivel"
+                        id="dormitorios-reversivel">
+                     <label class="form-check-label" for="dormitorios-reversivel">
+                        Dormitório reversível
+                     </label>
+                  </div>
+               </div>
+
+               <label for="banheiros" class="col-form-label bold">Nº de banheiros</label>
+               <input type="text" class="form-control" placeholder="0" id="banheiros" name="banheiros">
+
+            </div>
+
+            <!-- Terceira coluna -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+               <label for="piso" class="col-form-label bold">Tipo de piso</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="ardosia" id="ardosia">
+                     <label class="form-check-label" for="ardosia">
+                        Árdosia
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="bloquete" id="bloquete">
+                     <label class="form-check-label" for="bloquete">
+                        Bloquete
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="ceramica" id="ceramica">
+                     <label class="form-check-label" for="ceramica">
+                        Cerâmica
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="cimento" id="cimento">
+                     <label class="form-check-label" for="cimento">
+                        Cimento queimado
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="laminado" id="laminado">
+                     <label class="form-check-label" for="laminado">
+                        Laminado
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="marmore" id="marmore">
+                     <label class="form-check-label" for="marmore">
+                        Mármore
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="contrapiso" id="contrapiso">
+                     <label class="form-check-label" for="contrapiso">
+                        Contrapiso
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="porcelanato" id="porcelanato">
+                     <label class="form-check-label" for="porcelanato">
+                        Porcelanato
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="tabua" id="tabua">
+                     <label class="form-check-label" for="tabua">
+                        Tábua
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="granito" id="granito">
+                     <label class="form-check-label" for="granito">
+                        Granito
+                     </label>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Quarta coluna -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+               <label for="lazer" class="col-form-label bold">Lazer</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="sauna" id="sauna">
+                     <label class="form-check-label" for="sauna">
+                        Sauna
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="adega" id="adega">
+                     <label class="form-check-label" for="adega">
+                        Adega
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="churrasqueira" id="churrasqueira">
+                     <label class="form-check-label" for="churrasqueira">
+                        Churrasqueira
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="piscina" id="piscina">
+                     <label class="form-check-label" for="piscina">
+                        Piscina
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="solarium" id="solarium">
+                     <label class="form-check-label" for="solarium">
+                        Solarium
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="varanda" id="varanda">
+                     <label class="form-check-label" for="varanda">
+                        Varanda gourmet
+                     </label>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Quinta coluna -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+               <label for="armarios" class="col-form-label bold">Armários</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="cozinha-armario" id="cozinha-armario">
+                     <label class="form-check-label" for="cozinha-armario">
+                        Cozinha
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="corredor" id="corredor">
+                     <label class="form-check-label" for="corredor">
+                        Corredor
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="dormitorios-armario"
+                        id="dormitorios-armario">
+                     <label class="form-check-label" for="dormitorios-armario">
+                        Dormitórios
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="closet" id="closet">
+                     <label class="form-check-label" for="closet">
+                        Closet
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="banheiros-armario" id="banheiros-armario">
+                     <label class="form-check-label" for="banheiros-armario">
+                        banheiros
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="cinema" id="cinema">
+                     <label class="form-check-label" for="cinema">
+                        Home theater / cinema
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="sala" id="sala">
+                     <label class="form-check-label" for="sala">
+                        Sala
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="dorm-empregada" id="dorm-empregada">
+                     <label class="form-check-label" for="dorm-empregada">
+                        Dorm. Empregada
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="escritorios" id="escritorios">
+                     <label class="form-check-label" for="escritorios">
+                        Escritórios
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="area-armarios" id="area-armarios">
+                     <label class="form-check-label" for="area-armarios">
+                        Área de serviço
+                     </label>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Sexta coluna -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+               <label for="infraestrutura" class="col-form-label bold">Infraestrutura</label>
+               <div class="">
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="alarme" id="alarme">
+                     <label class="form-check-label" for="alarme">
+                        Alarme
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="portao" id="portao">
+                     <label class="form-check-label" for="portao">
+                        Portão eletrônico
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="terraco" id="terraco">
+                     <label class="form-check-label" for="terraco">
+                        Terraço
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="inverno" id="inverno">
+                     <label class="form-check-label" for="inverno">
+                        Jardim de inverno
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="cobertas" id="cobertas">
+                     <label class="form-check-label" for="cobertas">
+                        Vagas cobertas
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="descobertas" id="descobertas">
+                     <label class="form-check-label" for="descobertas">
+                        Vagas descobertas
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="mezanino" id="mezanino">
+                     <label class="form-check-label" for="mezanino">
+                        Mezanino
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="praia" id="praia">
+                     <label class="form-check-label" for="praia">
+                        Metros da praia
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="mar" id="mar">
+                     <label class="form-check-label" for="mar">
+                        Vista para o mar
+                     </label>
+                  </div>
+
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" name="ar-condicionado" id="ar-condicionado">
+                     <label class="form-check-label" for="ar-condicionado">
+                        Ar condicionado
+                     </label>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="form-group row">
+
+            <label for="fgts" class="col-form-label col-3 bold">Usou FGTS nos últimos 3 anos?</label>
+
+            <div class="col-3">
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="fgts" id="fgts-s" value="S">
+                  <label for="fgts-s" class="form-check-label">Sim</label>
+               </div>
+
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="fgts" id="fgts-n" value="N">
+                  <label for="fgts-n" class="form-check-label">Não</label>
+               </div>
+            </div>
+
+            <label for="iptu" class="col-form-label col-3 bold">IPTU</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="iptu" name="iptu">
+            </div>
+
+            <label for="venda" class="col-form-label col-3 bold">Valor de venda</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="venda" name="venda">
+            </div>
+
+            <label for="locação" class="col-form-label col-3 bold">Valor de locação</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="locação" name="locação">
+            </div>
+
+            <label for="permuta" class="col-form-label col-3 bold">Permuta?</label>
+
+            <div class="col-3">
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="permuta" id="permuta-s" value="S">
+                  <label for="permuta-s" class="form-check-label">Sim</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="permuta" id="permuta-n" value="N">
+                  <label for="permuta-n" class="form-check-label">Não</label>
+               </div>
+            </div>
+
+            <label for="condominio" class="col-form-label col-3 bold">Condomínio</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="condominio" name="condominio">
+            </div>
+
+            <label for="ac1" class="col-form-label col-3 bold">AC</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="ac1" name="ac1">
+            </div>
+
+            <label for="ac2" class="col-form-label col-3 bold">AC</label>
+
+            <div class="col-3">
+               <input type="text" class="form-control" id="ac2" name="ac2">
+            </div>
+
+      </fieldset>
+
+      <div class="form-group row">
+      </div>
+
+      <div class="form-group row">
+         <div class="col-lg-10">
+            <button type="button" class="btn btn-primary">
+               Enviar
+            </button>
+         </div>
+      </div>
+
+      <!-- Código referente ao Toast (pequeno lembrete na tela) -->
+
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+         <div class="toast-header">
+            <strong class="mr-auto">Termos</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="toast-body">
+            Lembrete para ler os termos de compromisso antes de anunciar.
+         </div>
+      </div>
+
+
+   </form>
+
+   <!-- Código referente a mensagem no final da página -->
+
+   <div class="endpage-text" style="padding-top: 100px;">
+      <h5>Horário de Funcionamento <br></h5>
+   </div>
+   <div class="endpage-text">
+      <h8>Imobiliária Luis Imóveis Niterói | Os Melhores Imóveis da Região Oceânica | Venda e Locação</h8>
+   </div>
+   <div class="endpage-text">
+      <h8>Segunda a sexta das 09:00 às 18:00</h8>
+   </div>
+   <div class="endpage-text">
+      <h8>Sábado das 09:00 as 17:00</h8>
+   </div>
+   <div class="endpage-text">
+      <h8><br>CRECI: 7888J</h8>
+   </div>
+
+   <!-- Código referente ao rodapé -->
+
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-2 col-lg-2 col-sm-5">
+               <h5>Institucional</h5>
+               <ul class="list-unstyled">
+                  <li><a>Fale conosco</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-sm-7">
+               <h5>Serviços e Benefícios</h5>
+               <ul class="list-unstyled">
+                  <li><a href="anuncie.hmtl">Anuncie o seu imóvel Grátis</a></li>
+                  <li><a>Assinatura Eletônica - Veja como Funciona!</a></li>
+                  <li><a>Atualização cadastral - Proprietários</a></li>
+                  <li><a>Como alugar um imóvel</a></li>
+                  <li><a>Encomende seu imóvel</a></li>
+                  <li><a>Financiamento | Documentação do Comprador</a></li>
+                  <li><a>Simule o seu Financiamento</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+               <h5>Imóveis para Alugar</h5>
+               <ul class="list-unstyled">
+                  <li><a>Alugar em Camboinhas</a></li>
+                  <li><a>Alugar em Icaraí e Santa Rosa</a></li>
+                  <li><a>Alugar em Itaipu</a></li>
+                  <li><a>Alugar em Pendotiba e Maria Paula</a></li>
+                  <li><a>Alugar em Piratininga</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+               <h5>Imóveis para Comprar</h5>
+               <ul class="list-unstyled">
+                  <li><a>Comprar em Camboinhas</a></li>
+                  <li><a>Comprar em Itacoatiara</a></li>
+                  <li><a>Comprar em Itaipu</a></li>
+                  <li><a>Comprar em Pendotiba</a></li>
+                  <li><a>Comprar em Piratininga</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

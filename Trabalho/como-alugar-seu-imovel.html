@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Alugar</title>
+</head>
+
+<!-- Componentes usados diferentes:
+     midia em frontpage
+     breadcrumb em anuncie
+     toast em anuncie (necessidade de javascript para iniciar o toast na tela)
+     badge em piratininga-1
+     pagination em pirtaning-1/piratininga-2
+-->
+
+<body>
+
+    <!-- Código referente ao cabeçalho -->
+
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top" style="box-shadow: 5px 10px 8px #000">
+        <div class="container">
+            <a class="navbar-brand" href="frontpage.html"><img src="assets/images/logo.png" style="width: 90px" ;
+                    alt="Luis Imóveis"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Botão de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav" style="padding-left: 30%;">
+                    <a class="nav-link nav-item ">
+                        <i class="fa-brands fa-whatsapp"></i>(21) 3741-8920</a>
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa-brands fa-whatsapp"></i>Venda e aluguel</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">(21) 99974-3384</a>
+                            <a class="dropdown-item" href="#">(21) 2608-0489</a>
+                        </div>
+                    </div>
+                    <a class="nav-link nav-item" href="anuncie.html">
+                        <i class="fa-solid fa-house-circle-exclamation"></i>Anuncie seu imóvel</a>
+                    <a class="nav-link nav-item" href="como-alugar-seu-imovel.html">Como alugar seu imóvel</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav aria-label="breadcrumb" class="centralizar" style="margin-top: 100px; width: 1200px;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="frontpage.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Como alugar seu imóvel</li>
+        </ol>
+    </nav>
+
+    <!-- Código referente ao accordion -->
+
+    <div class="container">
+        <h4 class="mb-3 bold" id="alugar" style="margin-top: 100px;">Como alugar</h4>
+
+        <div class="accordion mb-4" id="id-accordion">
+            <div class="card">
+                <div class="card-header" id="id-header-fisica">
+                    <h5 class="mb-0">
+                        <a href="#id-fisica" data-toggle="collapse" aria-expanded="true" aria-controls="id-fisica">
+                            Documentos Exigidos para Locação da Pessoa Física
+                        </a>
+                    </h5>
+                </div>
+
+                <div id="id-fisica" class="collapse show" data-parent="#id-accordion" aria-labelledby="id-header-fisica">
+
+                    <div class="card-body">
+                        <p>
+                            <h7>Para dar agilidade ao sue processo de locação, se você enviar <b>CÓPIA DO RG (FRENTE E
+                                    VERSO)</b>, o número do CPF, a sua profissão e comprovar sua Renda Declarada, só com
+                                isso, já poderemos aprovar sua ficha. Depois, basta você escolhe qual será a garantia
+                                sua
+                                melhor GARANTIA. . </h7>
+
+                        <h5 style="color: darkblue; margin-left: 20px;">O que aceitamos como garantia da locação</h5>
+                        <h7><b>1 - Fiador</b> sem restrições no nome e com renda de 3 <b>vezes</b> o valor do aluguel, e
+                            com
+                            imóvel no
+                            estado do Rio de Janeiro, quitado sem dívidas, ou <br>
+                            <b>2 -</b> Seguro fiança locatícia, ou<br>
+                            <b>3 -</b> Seguro Essencial, ou<br>
+                            <b>4 -</b> Título de capitalização – Mínimo 6 meses máximo 12 meses.<br><br>
+                            Caso você não tenha algumas destas garantias: <b>Fale conosco vamos analisar a sua renda e o
+                                seu
+                                caso</b> e lhe daremos uma posição.<br><br>
+                            Mas atenção <b> não se iluda</b> contratando o auxílio de <b>Fiadores ou Inquilinos</b>
+                            Profissionais, <b>(não é
+                                legal)</b> e você perderá a sua reserva, gastará tempo e dinheiro à toa, pois já temos o
+                            cadastro de
+                            todos eles no nosso sistema.
+                        </h7>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="id-header-juridica">
+                    <h5 class="mb-0">
+                        <a href="#id-juridica" data-toggle="collapse" aria-expanded="true" aria-controls="id-juridica">
+                            Documentos Exigidos para Locação da Pessoa Jurídica
+                        </a>
+                    </h5>
+                </div>
+                <div id="id-juridica" class="collapse" data-parent="#id-accordion" aria-labelledby="id-header-juridica">
+                    <div class="card-body">
+                        <p>
+                            <h7>Para dar agilidade ao sue processo de locação, se você enviar <b>CÓPIA DO CONTRATO
+                                    SOCIAL (CARTÃO
+                                    CNPJ)</b>, o número do CNPJ, a sua área de atuação e comprovar seu Faturamento
+                                Declarada, só com
+                                isso, já poderemos aprovar sua ficha*. Depois, basta você escolhequal seráa garantia sua
+                                melhor
+                                GARANTIA. </h7>
+
+                        <h5 style="color: darkblue; margin-left: 20px;">O que aceitamos como garantia da locação</h5>
+                        <h7><b>1 - Fiador</b> sem restrições no nome e com renda de 3 <b>vezes</b> o valor do aluguel, e
+                            com
+                            imóvel no
+                            estado do Rio de Janeiro, quitado sem dívidas, ou <br>
+                            <b>2 -</b> Seguro fiança locatícia, ou<br>
+                            <b>3 -</b> Depósito Caução, ou<br>
+                            <b>4 -</b> Título de capitalização – Mínimo 6 meses máximo 12 meses.<br><br>
+                            Caso você não tenha algumas destas garantias: <b>Fale conosco vamos analisar a sua renda e o
+                                seu
+                                caso</b> e lhe daremos uma posição.<br><br>
+                            Mas atenção <b> não se iluda</b> contratando o auxílio de <b>Fiadores ou Inquilinos</b>
+                            Profissionais, <b>(não é
+                                legal)</b> e você perderá a sua reserva, gastará tempo e dinheiro à toa, pois já temos o
+                            cadastro de
+                            todos eles no nosso sistema.
+                        </h7>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Código referente a mensagem no final da página -->
+
+    <div class="endpage-text" style="padding-top: 100px;">
+        <h5>Horário de Funcionamento <br></h5>
+    </div>
+    <div class="endpage-text">
+        <h8>Imobiliária Luis Imóveis Niterói | Os Melhores Imóveis da Região Oceânica | Venda e Locação</h8>
+    </div>
+    <div class="endpage-text">
+        <h8>Segunda a sexta das 09:00 às 18:00</h8>
+    </div>
+    <div class="endpage-text">
+        <h8>Sábado das 09:00 as 17:00</h8>
+    </div>
+    <div class="endpage-text">
+        <h8><br>CRECI: 7888J</h8>
+    </div>
+
+    <!-- Código referente ao rodapé -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-sm-5">
+                    <h5>Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a>Fale conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-sm-7">
+                    <h5>Serviços e Benefícios</h5>
+                    <ul class="list-unstyled">
+                        <li><a>Anuncie o seu imóvel Grátis</a></li>
+                        <li><a>Assinatura Eletônica - Veja como Funciona!</a></li>
+                        <li><a>Atualização cadastral - Proprietários</a></li>
+                        <li><a>Como alugar um imóvel</a></li>
+                        <li><a>Encomende seu imóvel</a></li>
+                        <li><a>Financiamento | Documentação do Comprador</a></li>
+                        <li><a>Simule o seu Financiamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+                    <h5>Imóveis para Alugar</h5>
+                    <ul class="list-unstyled">
+                        <li><a>Alugar em Camboinhas</a></li>
+                        <li><a>Alugar em Icaraí e Santa Rosa</a></li>
+                        <li><a>Alugar em Itaipu</a></li>
+                        <li><a>Alugar em Pendotiba e Maria Paula</a></li>
+                        <li><a>Alugar em Piratininga</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+                    <h5>Imóveis para Comprar</h5>
+                    <ul class="list-unstyled">
+                        <li><a>Comprar em Camboinhas</a></li>
+                        <li><a>Comprar em Itacoatiara</a></li>
+                        <li><a>Comprar em Itaipu</a></li>
+                        <li><a>Comprar em Pendotiba</a></li>
+                        <li><a>Comprar em Piratininga</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
