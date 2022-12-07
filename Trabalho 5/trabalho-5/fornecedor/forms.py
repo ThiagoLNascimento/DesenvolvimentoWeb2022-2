@@ -22,9 +22,23 @@ class FornecedorForm(forms.ModelForm):
 
         self.fields['telefone'].error_messages = {'required': 'Campo obrigatório para telefone.'}
         self.fields['telefone'].widget.attrs.update({'class': 'form-control form-control-sm'})
-        self.fields['telefone'].empty_label = 'Digite somente os números incluindo o DDD'
 
         self.fields['cnpj'].error_messages = {'required': 'Campo obrigatório para CNPJ.'}
-        self.fields['cnpj'].empty_label = 'Utilizar a formatação XX.XXX.XXX/XXXX-XX'
         self.fields['cnpj'].widget.attrs.update({'class': 'form-control form-control-sm'})
 
+    def clean_cnpj(self):
+        cnpj = self.cleaned_data.get("cnpj")
+
+        if len(cnpj) != 18:
+            self.add_error('cnpj', 'Tamanho inválido para o CNPJ. Use o formato XX.XXX.XXX/XXXX-XX.')
+
+        if not cpfcnpj.validate(cnpj):
+            self.add_error('cnpj', 'Digite um número de CNPJ válido.')
+
+        return cnpj
+
+    def clean_telefone(self):
+        tel = self.cleaned_data.get("telefone")
+
+        if len(str(tel)) < 11:
+            self.add_error('telefone', 'Digite somente os números incluindo o DDD')
