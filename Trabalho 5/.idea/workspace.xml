@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c03271f3-1f80-4524-8395-1d4acc3bb031" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trabalho 4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/projeto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/PopulateBDD.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/migrations/0002_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/migrations/0003_banner_cardfront.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/templates/homepage/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/homepage/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/projeto/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/Piratininga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/carrousel-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/casa-piratininga-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/casa-piratininga-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/js/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/static/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/.idea/django19-completo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/categoria/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/migrations/0002_auto_20200319_1607.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/templates/produto/pesquisa_produto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/produto/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/projeto/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_444444_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_555555_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_777620_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_777777_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/css/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/carrinho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/hortifruti-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/abacate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/cereja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/kiwi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/lichia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/limao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/mamao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/maracuja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/melancia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/produtos/pessego.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/binoculo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/database_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/database_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/database_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/database_save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/databases_table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/exclamation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/images/skin/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/jquery.mask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/static/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django19-completo/templates/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IWStdkQeYxXJSOmn7tQNJBoO2m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Dados do Usuario/Documents/2022 -2/Desenvolvimento Web/DesenvolvimentoWeb2022-2/Trabalho 5/trabalho-5",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Trabalho 5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c03271f3-1f80-4524-8395-1d4acc3bb031" name="Changes" comment="" />
+      <created>1670296063090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670296063090</updated>
+    </task>
+    <servers />
+  </component>
+</project>
