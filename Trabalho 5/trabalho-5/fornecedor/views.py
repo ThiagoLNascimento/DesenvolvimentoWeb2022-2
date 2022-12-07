@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404, redirect
 
 from fornecedor.forms import FornecedorForm
@@ -6,7 +7,14 @@ from fornecedor.models import Fornecedor
 
 
 def lista_fornecedor(request):
+    lista_de_fornecedores = Fornecedor.objects \
+                            .order_by('nome')
+    paginator = Paginator(lista_de_fornecedores, 3)
+    pagina = request.GET.get('pagina')
+    page_obj = paginator.get_page(pagina)
+
     pass
+    return render(request, 'fornecedor/pesquisa_fornecedor.html', {'fornecedores': page_obj })
 
 
 def cadastra_fornecedor(request):

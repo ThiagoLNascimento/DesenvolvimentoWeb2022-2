@@ -26,6 +26,7 @@ class FornecedorForm(forms.ModelForm):
         self.fields['cnpj'].error_messages = {'required': 'Campo obrigatório para CNPJ.'}
         self.fields['cnpj'].widget.attrs.update({'class': 'form-control form-control-sm'})
 
+    # Exemplo para uso de CNPJ válido: 73.142.884/0001-92
     def clean_cnpj(self):
         cnpj = self.cleaned_data.get("cnpj")
 
@@ -36,9 +37,3 @@ class FornecedorForm(forms.ModelForm):
             self.add_error('cnpj', 'Digite um número de CNPJ válido.')
 
         return cnpj
-
-    def clean_telefone(self):
-        tel = self.cleaned_data.get("telefone")
-
-        if len(str(tel)) < 11:
-            self.add_error('telefone', 'Digite somente os números incluindo o DDD')
