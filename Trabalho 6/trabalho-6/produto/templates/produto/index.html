@@ -37,24 +37,29 @@
         let url = form.attr("action")
         let formData = form.serializeArray()
         $.post(url, formData, function(resposta) {
-            $("#body").prepend(`<tr>
+            let id = resposta.id
+            let quantidade = resposta.quantidade
+            $("#body").append(`<tr>
                          <td class="text-left align-middle categoria">
                          </td>
                          <td class="text-center align-middle nome">
                          </td>
                         <td class="text-right pr-5 align-middle preco">
                          </td>
-                         <td class="text-center align-middle quantidade">
-                            <form class="mx-auto" style="width: 60px;"
+                         <td class="text-center align-middle">
+                            <form class="mx-auto quantidade-form" style="width: 60px;"
                                   action ="{% url 'produto:atualiza_produto' %}"
                                   method ="POST" novalidate>
+                                {% csrf_token %}
                             </form>
                          </td>
-                         <td class="text-right pr-5 align-middle preco_total">
+                         <td class="text-right pr-5 align-middle preco-total">
                          </td>
                          <td class="text-center align-middle">
                             <form action ="{% url 'produto:atualiza_produto' %}"
-                                  method ="post" novalidate>
+                                  method ="post" novalidate
+                                  class="remove">
+                                {% csrf_token %}
                                <button style="margin-top: 0px; margin-bottom: 0px;
                                               padding-top: 3px; padding-bottom: 3px;
                                               width: 40px"
@@ -66,12 +71,49 @@
                             </form>
                          </td>
                       </tr>`)
-            $("tr:first-child").find(".categoria").text(resposta.categoria)
-            $("tr:first-child").find(".nome").text(resposta.nome)
-            $("tr:first-child").find(".preco").text(resposta.preco)
-            $("tr:first-child").find(".quantidade").text(resposta.quantidade)
-            $("tr:first-child").find(".preco_total").text(resposta.preco_total)
+            $("tr:last-child").find(".categoria").text(resposta.categoria)
+            $("tr:last-child").find(".nome").text(resposta.nome)
+            $("tr:last-child").find(".preco").text(resposta.preco)
+            $("tr:last-child").find(".quantidade-form").append('<input type="hidden" name="produto_id" value="" id="id_produto_id" class="id">')
+            $("tr:last-child").find(".quantidade-form").append('<input type="text" name="quantidade" value="" class="form-control quantidade form-control-sm" style="text-align: center; width: 70px;" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required id="id_quantidade">')
+            $("tr:last-child").find(".preco_total").text(resposta.preco_total)
+            $("tr:last-child").find(".remove").append('<input type="hidden" name="produto_id" value="" id="id_produto_id" class="id">')
+            $("tr:last-child").find(".id").val(id)
+            $("tr:last-child").find(".quantidade").val(quantidade)
+            $("#valor-do-carrinho").text(resposta.preco_carrinho)
         })
     })
+
+   $("#tabela").on("blur", "input.quantidade", function() {
+      let valor = $(this).val()
+      if (valor < 1 || valor > 99) {
+         $(this).focus()
+         return
+      }
+
+      let form = $(this).parent()
+      let tr = form.parent().parent()
+      let url = form.attr("action")
+      let formData = form.serializeArray()
+      $.post(url, formData, function(resposta) {
+         tr.find(".preco-total").text(resposta.preco_total)
+         $("#valor-do-carrinho").text(resposta.preco_carrinho)
+      })
+   })
+
+    $("#tabela").on("click", ".remover", function() {
+      let form = $(this).parent()
+      form.append('<input type="hidden" name="quantidade" value="0">')
+      let tr = form.parent().parent()
+      let url = form.attr('action')
+      let formData = form.serializeArray()
+      $.post(url, formData, function(resposta) {
+         tr.fadeTo('slow', 0.3, function() {
+            $(this).remove()
+         })
+        $("#valor-do-carrinho").text(resposta.preco_carrinho)
+      })
+   })
+
 
 {% endblock %}

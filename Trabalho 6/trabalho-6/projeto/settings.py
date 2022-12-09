@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-CARRINHO_SESSION_ID = 'carrinho'
+CARRINHO_SESSION_ID = 'compras'
 
 USE_THOUSAND_SEPARATOR = False
 

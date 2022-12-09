@@ -8,7 +8,8 @@
 <div class="table-responsive mb-3">
          <table class="table table-sm">
             <colgroup>
-               <col width="40%">
+               <col width="20%">
+               <col width="20%">
                <col width="15%">
                <col width="15%">
                <col width="15%">
@@ -26,11 +27,70 @@
             </thead>
             <tbody id="body">
 
+               {% for item, form in listas %}
+                  <tr>
+                     <td>
+                        {{ item.produto.categoria }}
+                     </td>
+                     <td class="text-center align-middle">
+                        {{ item.produto.nome }}
+                     </td>
+                     <td class="text-center align-middle">
+                        R$ {{ item.preco | intcomma  }}
+                     </td>
+                     <td class="text-center align-middle">
+                        <form class="mx-auto" style="width: 60px;"
+                              action ="{% url 'produto:atualiza_produto' %}"
+                              method ="POST" novalidate>
+                           {% csrf_token %}
+                           {{ form.produto_id }}
+                           {{ form.quantidade }}
+                        </form>
+                     </td>
+                     <td class="text-right pr-5 align-middle preco-total">
+                        R$ {{ item.preco_total | intcomma }}
+                     </td>
+                     <td class="text-center align-middle">
+                        <form action ="{% url 'produto:atualiza_produto' %}"
+                              method ="post" novalidate>
+                           {% csrf_token %}
+                           {{ form.produto_id }}
+                           <button style="margin-top: 0px; margin-bottom: 0px;
+                                          padding-top: 3px; padding-bottom: 3px;
+                                          width: 40px"
+                                   type="button"
+                                   class="btn btn-sm btn-danger remover"
+                                   tabindex="-1">
+                              <img src="{% static 'images/skin/remove.png' %}">
+                           </button>
+                        </form>
+                     </td>
+                  </tr>
+               {% endfor %}
+            </tbody>
+         </table>
+      </div>
+</div>
+
+<div class="table-responsive mb-3">
+         <table class="table table-sm">
+            <colgroup>
+               <col width="20%">
+               <col width="20%">
+               <col width="15%">
+               <col width="15%">
+               <col width="15%">
+               <col width="15%">
+            </colgroup>
+            <thead>
+            </thead>
+            <tbody >
+
                <tr>
-                  <td colspan="3">
+                  <td colspan="4">
                      <strong style="margin-left: 10px">Total</strong>
                   </td>
-                  <td class="text-right pr-5">
+                  <td class="text-right pr-5 align-middle">
                      <strong id="valor-do-carrinho">
                         R$ {{ valor_do_carrinho | floatformat:2 | intcomma }}
                      </strong>

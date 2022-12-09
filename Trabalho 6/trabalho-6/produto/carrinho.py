@@ -15,10 +15,7 @@ class Carrinho(object):
 
     def atualiza(self, id, quantidade):
 
-        #   {'1': {'id': '1', 'preco': '7.70', 'quantidade': 10, 'preco_total': '77.0'},
-        #    '2': {'id': '2', 'preco': '3.30', 'quantidade': 3, 'preco_total': '9.90'}}
-
-        produto = Produto.objects.get(id=id, disponivel=True)
+        produto = Produto.objects.get(id=id)
 
         if id not in self.carrinho:
             self.carrinho[id] = {'id': id, 'preco': str(produto.preco), 'quantidade': quantidade,
@@ -55,8 +52,6 @@ class Carrinho(object):
 
     def get_produtos(self):
 
-        #   {'1': {'id': '1', 'preco': '7.70', 'quantidade': 10, 'preco_total': '77.0'},
-        #    '2': {'id': '2', 'preco': '3.30', 'quantidade': 3, 'preco_total': '9.90'}}
 
         lista = []
         for item in self.carrinho.values():

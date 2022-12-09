@@ -7,7 +7,7 @@ class Produto(models.Model):
     categoria = models.ForeignKey(Categoria, related_name='produtos', on_delete=models.DO_NOTHING)
     nome = models.CharField(max_length=100, db_index=True)
     qtd_estoque = models.IntegerField()
-    preco = models.DecimalField(max_digits=5, decimal_places=2)
+    preco = models.DecimalField(max_digits=6, decimal_places=2)
 
     class Meta:
         db_table='produto'
