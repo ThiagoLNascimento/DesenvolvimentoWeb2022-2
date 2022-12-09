@@ -1,12 +1,10 @@
 import locale
 from decimal import Decimal
 
-from django.contrib import messages
 from django.http import JsonResponse
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 from django.forms.models import model_to_dict
 
-from categoria.models import Categoria
 from produto.carrinho import Carrinho
 from produto.forms import ProdutoForm, QuantidadeForm
 from produto.models import Produto
@@ -86,6 +84,8 @@ def atualiza_produto(request):
 
         carrinho = Carrinho(request)
         if (quantidade == 0):
+            produto = get_object_or_404(Produto, id=produto_id)
+            produto.delete()
             carrinho.remover(produto_id)
             preco_total = 0.0
         else:
@@ -100,8 +100,6 @@ def atualiza_produto(request):
         preco_carrinho = locale.currency(preco_carrinho, grouping=True)
         preco_total = Decimal(preco_total)
         preco_total = locale.currency(preco_total, grouping=True)
-
-        print(preco_total)
 
         return JsonResponse({'quantidade': qtd,
                              'preco_carrinho': preco_carrinho,

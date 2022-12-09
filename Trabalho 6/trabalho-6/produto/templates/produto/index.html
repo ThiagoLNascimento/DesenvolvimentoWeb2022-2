@@ -76,7 +76,7 @@
             $("tr:last-child").find(".preco").text(resposta.preco)
             $("tr:last-child").find(".quantidade-form").append('<input type="hidden" name="produto_id" value="" id="id_produto_id" class="id">')
             $("tr:last-child").find(".quantidade-form").append('<input type="text" name="quantidade" value="" class="form-control quantidade form-control-sm" style="text-align: center; width: 70px;" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required id="id_quantidade">')
-            $("tr:last-child").find(".preco_total").text(resposta.preco_total)
+            $("tr:last-child").find(".preco-total").text(resposta.preco_total)
             $("tr:last-child").find(".remove").append('<input type="hidden" name="produto_id" value="" id="id_produto_id" class="id">')
             $("tr:last-child").find(".id").val(id)
             $("tr:last-child").find(".quantidade").val(quantidade)
